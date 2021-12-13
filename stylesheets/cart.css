@@ -1,0 +1,112 @@
+.openShoppingCart h1 {
+    font-size: 30pt; text-align: center; 
+    color:#fff;
+    margin-top: 2%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.userCartItems {
+    height: 400pt;   
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    margin-top: 4%;
+}
+
+.userItemFromCart {
+    display: flex;
+    color: #fff;
+    margin-left: 10%;
+    margin-bottom: 4%;
+    background-color: #424141;
+    background: rgba(0,0,0,.7);
+    width: fit-content;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    padding-left: 0.8%;
+}
+
+.userItemFromCart img {
+    width: 15%;
+    margin-right: 4%;
+}
+
+.flexDeetsToRight p {
+
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20pt;
+    margin-bottom: 1%;
+    margin-top: 7%;
+}
+
+.flexDeetsToRight .trashUserElement  {
+    width: 10%;
+    margin-left: 120%;
+    cursor: pointer;
+}
+
+.flexBabies {
+    display: flex;
+    align-items: center;
+}
+
+.checkOutBox {
+
+    flex: 1;
+    text-align: center; 
+}
+
+#checkUserOut {
+    font-size: 30pt; 
+    color:#000;
+    font-family: 'Bebas Neue', cursive;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#checkUserOut:hover {
+    color:#fff;
+    background-color: #000;
+}
+
+#backFromCart {
+
+    font-size: 30pt; 
+    color:#000;
+    font-family: 'Bebas Neue', cursive;
+    background-color: #fff;
+    cursor: pointer;
+
+}
+
+#backFromCart:hover {
+
+    color:#fff;
+    background-color: #000;
+
+}
+
+#totalCost {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20pt;
+    color: #fff;
+    margin-bottom: 1%;
+    margin-top: 7%;
+}
+
+.userCheckedOut {
+    text-align: center;
+}
+
+.userCheckedOut h1 {
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 20%;
+    font-size: 40pt;
+}
+
+.userCheckedOut a {
+    color: #fff;
+    font-size: 15pt;
+    font-family: 'Bebas Neue', cursive;
+}

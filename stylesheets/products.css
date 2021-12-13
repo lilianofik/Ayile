@@ -1,0 +1,80 @@
+.continueAsGuestDiv h1 {
+
+    text-align: center;
+    color: #fff;
+    margin-top: 3%;
+
+}
+
+.productsGrid {
+    display: grid;
+    margin-left: 17%;
+    margin-top: 3%;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 10pt 2pt;
+    overflow: auto;
+    max-height:460pt;
+    max-width: 100%;
+}
+
+#cloth1 {
+    width: 100%;
+    cursor: pointer;
+}
+
+#cloth2 {
+    width: 100%;
+    cursor: pointer;
+}
+
+#cloth3 {
+    width: 100%;
+    cursor: pointer;
+}
+
+#cloth4 {
+    width: 100%;
+    cursor: pointer;
+}
+
+#cloth5 {
+    width: 100%;
+    cursor: pointer;
+}
+
+#cloth6 {
+    width: 100%;
+    cursor: pointer;
+}
+
+#cloth7 {
+    width: 100%;
+    cursor: pointer;
+}
+
+#cloth8 {
+    width: 100%;
+    cursor: pointer;
+}
+
+.productsGrid p {
+
+    color: #fff;
+    text-align: left;
+    margin-top: 4%;
+}
+
+.addToFav {
+    max-width: 100%;
+    width: 9%;
+    margin-top: 4%;
+    cursor: pointer;
+}
+
+.ojoro {
+    max-width: 100%;
+    width: 20%;
+    margin-top: 4%;
+    cursor: pointer;
+}
+

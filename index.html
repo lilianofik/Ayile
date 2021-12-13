@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Ayile</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="stylesheets/homepage.css">
+        <link rel="stylesheet" href="stylesheets/fonts.css">
+        <link rel="stylesheet" href="stylesheets/products.css"> <!-- Products Page CSS -->
+        <link rel="stylesheet" href="stylesheets/eachTshirt.css"> <!-- Tshirt Page CSS -->
+        <link rel="stylesheet" href="stylesheets/cart.css"> <!-- Cart Page CSS -->
+
+        <!-- Scripts -->
+        <script src="scripts/main.js"></script>
+        <script src="scripts/firebase.mjs" type="module"></script>
+        <script src="scripts/eachShirt.js"></script><!-- View Shirt Detail Functionality-->
+        <script src="scripts/addingToCart.js"></script><!-- Add Shirt To Cart Functionality-->
+        <script src="scripts/addedToCart.js"></script><!-- Actual Add Shirt To Cart Functionality-->
+        <script src="scripts/removeFromCart.js"></script><!-- Remove Immediately From Cart Functionality-->
+        <script src="scripts/closeDetailElements.js"></script><!-- Remove From Details Page Functionality-->
+        <script src="scripts/fetchUserCartJs.js"></script><!-- Fetch Items in User Cart Functionality-->
+        <script src="scripts/checkOutUser.js"></script><!-- CheckOut User Functionality-->
+
+    </head>
+
+    <body>
+
+        <!-------------------------------------------------------------------------------------->
+
+        <nav>
+            <div class="logoImage">
+                    <img src="imagesUsed/send.png" alt="Main Logo" id="logo">
+                    <h1>AYILÉ</h1>
+                
+            </div>
+ 
+            <div class="nav-links">
+
+                <ul>
+                    <li><a href="#" id="signIn"> <img src="imagesUsed/person.png" alt="Sign In Person" id="person"> Sign In</a></li>
+                    <li>
+                        <a href="#" id="shoppingBag" style="display: none;"> <img src="imagesUsed/shopping.png" alt="Shopping Bag" id="shopping"> 
+                        <span id="putHere">0</span>
+                        </a>
+                    </li>
+
+                    <li><a href="#" id="signOut" style="display: none;">Sign Out</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-------------------------------------------------------------------------------------->
+        <div class="userChoices">
+
+            <div class="selections">
+
+                <button type="submit" id="signInButton">SIGN IN</button>
+                <button type="submit" id="contAsGuest">CONTINUE AS GUEST</button> 
+            </div>
+
+            <a href="#" class="registerNow"> Don't have an account? Register now. </a>
+        </div>
+
+
+        <div class="signInDiv" style="display: none;">
+
+            <h1>Sign In</h1>
+
+            <div class="signInForm">
+                <form>
+
+                    <span>
+                        <input type="email" id="signInEmail" placeholder="Email"><br>
+                    </span>
+
+                    <span>
+                        <input type="password" id="signInPswd" placeholder="Password"><br>
+                        <span id="wrongPassword" style="display: none;"><p> Invalid Email/Password </p></span>
+                    </span>
+
+                    <div class="error"></div>
+
+                    <span class="flexSignInBtnDiv">
+                        <button type="submit" id="backBtnSignInForm">Back</button>
+                        <button type="submit" id="signInFormSubmit">Sign In</button>
+                    </span>
+
+                </form>
+
+                <a href="#" class="registerNow"> Don't have an account? Register now. </a>
+            </div>    
+
+        </div>
+
+        <div class="registerDiv" style="display: none;">
+
+            <h1>Register Now</h1>
+
+            <div class="registerForm">
+                <form>
+
+                    <span>
+                        <input type="email" id="registerEmail" placeholder="Email"><br>
+                        <span id="reusedEmail" style="display: none;"><p> Email is already in use </p></span>
+                    </span>
+
+                    <span>
+                        <input type="password" id="registerPswd" placeholder="Password"><br>
+                        <span id="badPswdSignUp" style="display: none;"><p> Password must be 6 or more characters </p></span>
+                    </span>
+
+                    <div class="error"></div>
+
+                    <span class="flexRegBtnDiv">
+                        <button type="submit" id="backBtnRegForm">Back</button>
+                        <button type="submit" id="registerFormSubmit">Register Now</button>
+                    </span>
+
+                </form>
+
+            </div>    
+
+        </div>
+
+        <div class="continueAsGuestDiv" style="display: none;">
+        
+            <h1>AYILÉ</h1>
+
+            <div class="productsGrid">
+
+                <span>
+                    <img src="clothings/tshirt1.jpeg" alt="Main Logo" id="cloth1">
+                    <p>Tie-Dye Cropped Shirt</p>
+
+                    <p>$10</p>
+                </span>
+
+                    <span>
+                        <img src="clothings/tshirt2.jpeg" alt="Main Logo" id="cloth2">
+                        <p>Colorful Tie-Dye Shirt</p>
+
+                        <p>$10</p>
+
+                    </span>
+
+                    <span>
+                        <img src="clothings/tshirt3.jpeg" alt="Main Logo" id="cloth3">
+                        
+                        <p>Striped Shirt</p>
+
+                        <p>$10</p>
+
+                    </span>
+
+                    <span>
+                        <img src="clothings/tshirt4.jpeg" alt="Main Logo" id="cloth4">
+                        
+                        <p>Washed Shirt</p>
+
+                        <p>$10</p>
+
+                    </span>
+
+                    <span>
+                        <img src="clothings/tshirt5.jpeg" alt="Main Logo" id="cloth5">
+                        
+                        <p>AC/DC Shirt</p>
+
+                        <p>$10</p>
+
+                    </span>
+
+                    <span>
+                        <img src="clothings/tshirt6.jpeg" alt="Main Logo" id="cloth6">
+                        
+                        <p>Jersey Long-Sleeved Shirt</p>
+
+                        <p>$10</p>
+
+                    </span>
+
+                    <span>
+                        <img src="clothings/tshirt7.jpeg" alt="Main Logo" id="cloth7">
+                        
+                        <p>Slime Shirt</p>
+
+                        <p>$10</p>
+
+                    </span>
+
+                    <span>
+                        <img src="clothings/tshirt8.jpeg" alt="Main Logo" id="cloth8">
+                        
+                        <p>Dyed Cropped Shirt</p>
+
+                        <p>$10</p>
+
+                    </span>
+
+            </div>
+    </div>
+
+    <div class="allTshirtsDiv" style="display: none;">
+        <div id="tshirt1div" style="display: none;"> 
+
+            <img src="clothings/tshirt1.jpeg" alt="Main Logo" id="cloth1selection">
+
+            <span class="spanTee">
+                <p>Tie-Dye Cropped Shirt</p>
+
+                <p>$10</p>
+
+                <button type="submit" id="addToCartTee1" style="display: none;">Add To Cart</button><br>
+
+                <a href="#" id="addedToCartTee1" style="display: none;">Added to Cart. Keep Shopping?</a>
+
+                <a href="#" id="removeFromCartTee1" style="display: none;">Remove From Cart</a>
+
+                <p id="itemRemoved1" style="display: none;">Item Successfully Removed</p>
+
+                <button type="submit" class="backToGrid">BACK</button>
+            </span>
+            
+        </div>
+
+        <div id="tshirt2div" style="display: none;"> 
+
+            <img src="clothings/tshirt2.jpeg" alt="Main Logo" id="cloth2selection"> 
+
+            <span class="spanTee">
+                <p>Colorful Tie-Dye Shirt</p>
+
+                <p>$10</p>
+
+                <button type="submit" id="addToCartTee2" style="display: none;">Add To Cart</button><br>
+
+                <a href="#" id="addedToCartTee2" style="display: none;">Added to Cart. Keep Shopping?</a>
+
+                <a href="#" id="removeFromCartTee2" style="display: none;">Remove From Cart</a>
+
+                <p id="itemRemoved2" style="display: none;">Item Successfully Removed</p>
+
+                <button type="submit" class="backToGrid">BACK</button>
+            </span>
+
+        </div>
+
+        <div id="tshirt3div" style="display: none;"> 
+            
+            <img src="clothings/tshirt3.jpeg" alt="Main Logo" id="cloth3selection"> 
+        
+            <span class="spanTee">
+                <p>Striped Shirt</p>
+
+                <p>$10</p>
+
+                <button type="submit" id="addToCartTee3" style="display: none;">Add To Cart</button>
+
+                <a href="#" id="addedToCartTee3" style="display: none;">Added to Cart. Keep Shopping?</a>
+
+                <a href="#" id="removeFromCartTee3" style="display: none;">Remove From Cart</a>
+
+                <p id="itemRemoved3" style="display: none;">Item Successfully Removed</p>
+
+                <button type="submit" class="backToGrid">BACK</button>
+            </span>
+            
+        </div>
+
+        <div id="tshirt4div" style="display: none;"> 
+            
+            <img src="clothings/tshirt4.jpeg" alt="Main Logo" id="cloth4selection"> 
+        
+            <span class="spanTee">
+                <p>Washed Shirt</p>
+
+                 <p>$10</p>
+
+                 <button type="submit" id="addToCartTee4" style="display: none;">Add To Cart</button>
+
+                 <a href="#" id="addedToCartTee4" style="display: none;">Added to Cart. Keep Shopping?</a>
+
+                 <a href="#" id="removeFromCartTee4" style="display: none;">Remove From Cart</a>
+
+                 <p id="itemRemoved4" style="display: none;">Item Successfully Removed</p>
+
+                 <button type="submit" class="backToGrid">BACK</button>
+
+            </span>
+
+        </div>
+
+        <div id="tshirt5div" style="display: none;"> 
+
+            <img src="clothings/tshirt5.jpeg" alt="Main Logo" id="cloth5selection"> 
+
+            <span class="spanTee">
+
+                <p>AC/DC Shirt</p>
+
+                <p>$10</p>
+
+                <button type="submit" id="addToCartTee5" style="display: none;">Add To Cart</button>
+
+                <a href="#" id="addedToCartTee5" style="display: none;">Added to Cart. Keep Shopping?</a>
+
+                <a href="#" id="removeFromCartTee5" style="display: none;">Remove From Cart</a>
+
+                <p id="itemRemoved5" style="display: none;">Item Successfully Removed</p>
+
+                <button type="submit" class="backToGrid">BACK</button>
+            </span>
+
+        </div>
+
+        <div id="tshirt6div" style="display: none;"> 
+        
+            <img src="clothings/tshirt6.jpeg" alt="Main Logo" id="cloth6selection">
+
+            <span class="spanTee">
+
+                <p>Jersey Long-Sleeved Shirt</p>
+
+                <p>$10</p>
+
+                <button type="submit" id="addToCartTee6" style="display: none;">Add To Cart</button>
+
+                <a href="#" id="addedToCartTee6" style="display: none;">Added to Cart. Keep Shopping?</a>
+
+                <a href="#" id="removeFromCartTee6" style="display: none;">Remove From Cart</a>
+
+                <p id="itemRemoved6" style="display: none;">Item Successfully Removed</p>
+
+                <button type="submit" class="backToGrid">BACK</button>
+            </span>
+
+        </div>
+
+        <div id="tshirt7div" style="display: none;"> 
+            
+            <img src="clothings/tshirt7.jpeg" alt="Main Logo" id="cloth7selection"> 
+        
+            <span class="spanTee">
+
+                <p>Slime Shirt</p>
+
+                <p>$10</p>
+
+                <button type="submit" id="addToCartTee7" style="display: none;">Add To Cart</button>
+
+                <a href="#" id="addedToCartTee7" style="display: none;">Added to Cart. Keep Shopping?</a>
+
+                <a href="#" id="removeFromCartTee7" style="display: none;">Remove From Cart</a>
+
+                <p id="itemRemoved7" style="display: none;">Item Successfully Removed</p>
+
+                <button type="submit" class="backToGrid">BACK</button>
+            </span>
+
+
+        </div>
+
+        <div id="tshirt8div" style="display: none;">
+        
+            <img src="clothings/tshirt8.jpeg" alt="Main Logo" id="cloth8selection"> 
+
+            <span class="spanTee">
+
+                <p>Dyed Cropped Shirt</p>
+
+                <p>$10</p>
+
+                <button type="submit" id="addToCartTee8" style="display: none;">Add To Cart</button>
+
+                <a href="#" id="addedToCartTee8" style="display: none;">Added to Cart. Keep Shopping?</a>
+
+                <a href="#" id="removeFromCartTee8" style="display: none;">Remove From Cart</a>
+
+                <p id="itemRemoved8" style="display: none;">Item Successfully Removed</p>
+
+                <button type="submit" class="backToGrid">BACK</button>
+            </span>
+
+        </div>
+    </div>
+
+    <div class="openShoppingCart" style="display: none;">
+    
+        <h1>Shopping Bag</h1>
+
+        <div class="flexBabies">
+            <div class="userCartItems">
+
+            </div>
+
+            <div class="checkOutBox">
+
+                <p id="totalCost"></p>
+                <h1 id="checkUserOut">Check me out</h1>
+                <h1 id="backFromCart">Back</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="userCheckedOut">
+        <h1>You Have Successfully Checked Out</h1>
+
+        <a href="#" id="keepShoppingAfterCheckout">Keep Shopping?</a>
+    </div>
+
+    </body>
+
+
+</html>

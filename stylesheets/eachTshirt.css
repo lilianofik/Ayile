@@ -1,0 +1,494 @@
+.spanTee {
+    margin-left: 30%;
+}
+
+#tshirt1div {
+
+    margin-top: 7%;
+}
+
+#tshirt1div p {
+    color: #fff;
+    font-size: 250%;
+    line-height: 1.5;
+    font-family: 'Bebas Neue', cursive;
+    text-align: left;
+    margin-top: 5%;
+}
+
+#itemRemoved1 {
+    color: #fff;
+    font-size: 50%;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 2;
+}
+
+#cloth1selection {
+    margin-left: 15%;
+}
+
+#addToCartTee1 {
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    font-size: 20pt;
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+#removeFromCartTee1 {
+    font-family: 'Bebas Neue', cursive;
+    color: red;
+    font-size: 20pt;
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+#addToCartTee1:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.backToGrid {
+    font-family: 'Bebas Neue', cursive;
+    color: #000;
+    font-size: 20pt;
+    border: none;
+    padding: 2%;
+    background-color: #fff;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+.backToGrid:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#addedToCartTee1 {
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 4;
+}
+
+#tshirt2div {
+
+    margin-top: 7%;
+}
+
+#tshirt2div p {
+    color: #fff;
+    font-size: 250%;
+    line-height: 1.5;
+    font-family: 'Bebas Neue', cursive;
+    text-align: left;
+    margin-top: 5%;
+}
+
+#itemRemoved2 {
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 4;
+}
+
+#cloth2selection {
+    margin-left: 15%;
+    align-items: center;
+}
+
+#addToCartTee2 {
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    font-size: 20pt;
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+#removeFromCartTee2 {
+    font-family: 'Bebas Neue', cursive;
+    color: red;
+    font-size: 20pt;
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+
+#addToCartTee2:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+#addedToCartTee2 {
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 4;
+}
+
+#tshirt3div {
+
+    margin-top: 7%;
+}
+
+#tshirt3div p {
+    color: #fff;
+    font-size: 250%;
+    line-height: 1.5;
+    font-family: 'Bebas Neue', cursive;
+    text-align: left;
+}
+
+#itemRemoved3 {
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 4;
+}
+
+#cloth3selection {
+    margin-left: 15%;
+}
+
+#addToCartTee3 {
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    font-size: 20pt;
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+#removeFromCartTee3 {
+    font-family: 'Bebas Neue', cursive;
+    color: red;
+    font-size: 20pt;
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+
+#addToCartTee3:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#addedToCartTee3 {
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 4;
+}
+
+#tshirt4div {
+
+    margin-top: 7%;
+}
+
+#tshirt4div p {
+    color: #fff;
+    font-size: 250%;
+    line-height: 1.5;
+    font-family: 'Bebas Neue', cursive;
+    text-align: left;
+}
+
+#itemRemoved4 {
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 4;
+}
+
+#cloth4selection {
+    margin-left: 15%;
+}
+
+#addToCartTee4 {
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    font-size: 20pt;
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+#removeFromCartTee4 {
+    font-family: 'Bebas Neue', cursive;
+    color: red;
+    font-size: 20pt;
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+
+#addToCartTee4:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#addedToCartTee4 {
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 4;
+}
+
+#tshirt5div {
+
+    margin-top: 7%;
+}
+
+#tshirt5div p {
+    color: #fff;
+    font-size: 250%;
+    line-height: 1.5;
+    font-family: 'Bebas Neue', cursive;
+    text-align: left;
+}
+
+#itemRemoved5 {
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 4;
+}
+
+#cloth5selection {
+    margin-left: 15%;
+}
+
+#addToCartTee5 {
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    font-size: 20pt;
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+#removeFromCartTee5 {
+    font-family: 'Bebas Neue', cursive;
+    color: red;
+    font-size: 20pt;
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+
+#addToCartTee5:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#addedToCartTee5 {
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 4;
+}
+
+#tshirt6div {
+
+    margin-top: 7%;
+}
+
+#tshirt6div p {
+    color: #fff;
+    font-size: 250%;
+    line-height: 1.5;
+    font-family: 'Bebas Neue', cursive;
+    text-align: left;
+}
+
+#itemRemoved6 {
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 4;
+}
+
+#cloth6selection {
+    margin-left: 15%;
+}
+
+#addToCartTee6 {
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    font-size: 20pt;
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+#removeFromCartTee6 {
+    font-family: 'Bebas Neue', cursive;
+    color: red;
+    font-size: 20pt;
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+
+#addToCartTee6:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#addedToCartTee6 {
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 4;
+}
+
+#tshirt7div {
+
+    margin-top: 7%;
+}
+
+#tshirt7div p {
+    color: #fff;
+    font-size: 250%;
+    line-height: 1.5;
+    font-family: 'Bebas Neue', cursive;
+    text-align: left;
+}
+
+#itemRemoved7 {
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 4;
+}
+
+#cloth7selection {
+    margin-left: 15%;
+}
+
+#addToCartTee7 {
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    font-size: 20pt;
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+#removeFromCartTee7 {
+    font-family: 'Bebas Neue', cursive;
+    color: red;
+    font-size: 20pt;
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+
+#addToCartTee7:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#addedToCartTee7 {
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 4;
+}
+
+#tshirt8div {
+
+    margin-top: 7%;
+}
+
+#tshirt8div p {
+    color: #fff;
+    font-size: 250%;
+    line-height: 1.5;
+    font-family: 'Bebas Neue', cursive;
+    text-align: left;
+}
+
+#itemRemoved8 {
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 4;
+}
+
+#cloth8selection {
+    margin-left: 15%;
+}
+
+#addToCartTee8 {
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    font-size: 20pt;
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+#removeFromCartTee8 {
+    font-family: 'Bebas Neue', cursive;
+    color: red;
+    font-size: 20pt;
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+
+#addToCartTee8:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#addedToCartTee8 {
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 4;
+}

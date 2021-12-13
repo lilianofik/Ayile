@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    overflow: hidden; 
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  ), url('../imagesUsed/backy.jpeg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+nav {
+    width: 95%;
+    max-width: 100%;
+    position: sticky;
+    margin: 1% auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden; 
+    justify-content: space-between;
+    box-shadow: 0.1em .4em rgba(0, 0, 0, 0.1);
+    overflow: auto;
+}
+
+.logoImage {
+    flex-basis: 20%;
+    display: flex;
+    cursor: pointer;
+}
+
+.logoImage h1 {
+    font-size: 18pt;
+    margin-left: -1%; 
+    margin-top: 8%;
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.logoImage #logo {
+    width: 50pt;
+    max-width: 100%;
+}
+
+.nav-links {
+      flex: 1;
+      text-align: right;
+}
+
+.nav-links ul li {
+      list-style-type: none;
+      display: inline;
+      margin: 0 1.2%;
+}
+
+.nav-links ul li a{
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Yantramanav', sans-serif;
+}
+
+#signOut {
+    margin-right: 2.2%;
+    margin-top: 1%;
+}
+    
+#person {
+      max-width: 100%;
+      width: 1.8%;
+    
+}
+    
+#shopping {
+      max-width: 100%;
+      width: 1.8%;
+}
+
+#putHere {
+    border: solid #fff;
+    background-color: #fff;
+    border-radius: 60pt;
+    padding: 0 0.4%;
+    color: #000;
+}
+
+.selections {
+  text-align: center;
+  margin-top: 20%;
+  
+}
+
+.selections button {
+    font-family: 'Yantramanav', sans-serif;
+    color: #fff;
+    font-size: 25pt;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.selections button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#signInButton {
+    text-align: center;
+    padding: 1% 10% 1% 10%;
+}
+
+#contAsGuest {
+    text-align: center;
+    padding: 1% 2% 1% 2%;
+}
+
+.registerNow {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 15pt;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.signInDiv {
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 400pt;
+    border-radius: 25px;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.1); 
+    padding-top: 65px;
+    box-shadow: 0 0 10px #000;
+}
+
+.signInDiv h1 {
+    font-family: 'Francois One', sans-serif;
+    color: #fff;
+    margin-bottom: 1.5%;
+}
+
+.signInDiv .signInForm {
+    text-align: center;
+}
+
+.signInDiv .signInForm input {
+
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: 'Francois One', sans-serif;
+}
+
+.signInDiv .signInForm button {
+
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Francois One', sans-serif;
+}
+
+.signInDiv .signInForm button:hover {
+
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.signInDiv .signInForm input:hover {
+
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.signInDiv .signInForm span {
+    position: relative;
+}
+
+.flexSignInBtnDiv {
+    display: flex;
+
+}
+
+#backBtnSignInForm {
+    margin-right: 1.2%;
+}
+
+/****************/
+
+.registerDiv {
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 400pt;
+    border-radius: 25px;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.1); 
+    padding-top: 65px;
+    box-shadow: 0 0 10px #000;
+}
+
+.registerDiv h1 {
+    font-family: 'Francois One', sans-serif;
+    color: #fff;
+    margin-bottom: 1.5%;
+}
+
+.registerDiv .registerForm {
+    text-align: center;
+}
+
+.registerDiv .registerForm input {
+
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: 'Francois One', sans-serif;
+}
+
+.registerDiv .registerForm button {
+
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Francois One', sans-serif;
+}
+
+.registerDiv .registerForm button:hover {
+
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.registerDiv .registerForm input:hover {
+
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.registerDiv .registerForm span {
+    position: relative;
+}
+
+.flexRegBtnDiv {
+    display: flex;
+
+}
+
+#backBtnRegForm {
+    margin-right: 1.2%;
+}
